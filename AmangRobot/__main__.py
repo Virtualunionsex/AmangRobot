@@ -87,7 +87,7 @@ PM_START_TEXT = """
 
 ❍ {dispatcher.bot.first_name} is a bot manager + music to manage your group well.
 ❍ Press /help for Help.
-❍ Maintaned By @amwang.
+❍ Maintaned By @panggil_m.
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -377,7 +377,7 @@ def amang_about_callback(update, context):
                     InlineKeyboardButton(text="Extra Command", callback_data="amang_extra"),
                  ],
                  [
-                    InlineKeyboardButton(text="Credits", callback_data="amang_credit"),
+                    InlineKeyboardButton(text="Credits", callback_data="donasi"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="source_back"),
@@ -442,8 +442,8 @@ def amang_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/amangsupportgrup"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/amwangs"),
+                    InlineKeyboardButton(text="Support", url="t.me/fairysupport"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/nakama_asl"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="amang_"),
@@ -454,7 +454,7 @@ def amang_about_callback(update, context):
         )
 
 
-    elif query.data == "amang_credit":
+    elif query.data == "donasi":
         query.message.edit_text(
             text=f"๏ Credis for {dispatcher.bot.first_name}\n"
             f"\nHere Developers Making And Give Inspiration For Made The {dispatcher.bot.first_name}",
@@ -462,19 +462,8 @@ def amang_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴀᴍᴀɴɢ", url="https://t.me/amwang"),
-                    InlineKeyboardButton(text="ᴠɪᴀ", url="https://t.me/Oktaaaaasaa"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫⁣⁫Dᴀᴢɪɪ", url="https://t.me/xdazher"),
-                    InlineKeyboardButton(text="𝐤𝐞`𝐫𝐞𝐧", url="https://t.me/ptkkkkk"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="𝙏𝙊𝙉𝙄-𝙀𝙓", url="https://t.me/Tonic880"),
-                    InlineKeyboardButton(text="TD", url="https://t.me/tofik_dn"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="amang_"),
+                    InlineKeyboardButton(text="ᴅᴀɴᴀ", url="https://link.dana.id/qr/owbvx6i"),
+                    InlineKeyboardButton(text="ǫʀɪs", url="https://telegra.ph/Qris-08-26-2"),
                  ]
                 ]
             ),
@@ -722,7 +711,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1866066766:
+        if OWNER_ID != 5657257558:
             update.effective_message.reply_text(
                 f"I'm free for everyone ❤️ If you wanna make me smile, just join[My Channel]({DONATION_LINK})",
                 parse_mode=ParseMode.MARKDOWN,
